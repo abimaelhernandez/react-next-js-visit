@@ -1,0 +1,153 @@
+.userInfo {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 6rem 3.2rem;
+  background-image: url('../../public/user-background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  .container {
+    width: 100%;
+    height: 51vh;
+    background: rgba(66, 96, 124, 0.75);
+    box-shadow: 8px 1px 13px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .avatar {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      bottom: 5rem;
+      width: 7.8rem;
+      height: 7.8rem;
+      margin-bottom: 1rem;
+      border-radius: 50%;
+      background: #42607C;
+
+      .img {
+        background-image: url('../../public/avatar.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 7rem;
+        height: 7rem;
+      }
+    }
+
+    .settings {
+      position: relative;
+      display: flex;
+      bottom: 5rem;
+      font-weight: 600;
+      font-size: 1.4rem;
+      line-height: 1.9rem;
+      text-align: center;
+      text-decoration-line: underline;
+      color: #FFF;
+      justify-content: center;
+      
+      .logo {
+        position: relative;
+        background-image: url('../../public/cog.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 1.8rem;
+        height: 1.8rem;
+        margin: 0 10px 0 0;
+      }
+    }
+
+    .welcome {
+      width: 273px;
+      height: 1.5rem;
+      // font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 2.4rem;
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #FFF;
+    }
+
+    .languages {
+      display: flex;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      text-align: center;
+      text-transform: uppercase;      
+      color: #D8BC8B;
+      margin-top: 51px;
+    }
+
+    .button {
+      width: 121px;
+      height: 34px;
+      border: 1px solid #FFF;
+      border-radius: 35px;
+      background: transparent;
+      margin: 30px 0 38px 0;
+    }
+    
+    .date {
+      width: 100%;
+      height: 62px;
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 35px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #FFF;
+    }
+  }
+  
+  // dektop view   
+  @media only screen and (min-width: 1431px) {
+    width: 571px;
+    height: 1024px;
+    border-radius: 0px 30px 30px 0px;
+    padding: 0 81px 200px 108px;
+
+    .container {
+      width: 382px;
+      height: 485px;
+      border-radius: 19px;
+    
+      .avatar {
+        bottom: 58px;
+        width: 118px;
+        height: 118px;
+        margin-bottom: 18px;
+        
+        .img {
+          width: 112px;
+          height: 112px; 
+        }
+      }
+    
+      .settings {
+        bottom: 58px;
+        font-size: 14px;
+        line-height: 19px;
+        
+        .logo {
+          width: 18px;
+          height: 18px;
+          margin: 0 10px 0 0;
+        }
+      }
+    
+      .welcome {
+        height: 35px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
